@@ -1,11 +1,7 @@
-var React = require('react');
+import React from 'react';
 
-var note = React.createClass({
-  render: function() {
-    return (
-      <p>{this.props.text}</p>
-    );
-  }
-});
+class note extends React.Component {
+  render() => (<p>{this.props.text}</p>)
+};
 
-module.exports = note;
+export default note;

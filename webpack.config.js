@@ -1,7 +1,12 @@
 module.exports = {
     entry: './app/app.js',
     output: {
-      filename: 'public/bundle.js'
+      filename: 'public/bundle.js',
+      publicPath: '/'
+    },
+    devServer: {
+      inline: true,
+      contentBase: "./public/"
     },
     module: {
       loaders: [

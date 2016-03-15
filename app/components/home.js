@@ -1,11 +1,11 @@
-var React = require('react');
+import React from 'react';
 
-var Home = React.createClass({
-  render: function() {
-    return (
-      <div>That's a 404.<em>That's all we know.</em></div>
-    );
-  }
-});
+const Home = (props) => {
+  return (
+    <h3>
+      Enter your Github username above.
+    </h3>
+  );
+}
 
-module.exports = Home;
+export default Home;
